@@ -1,4 +1,14 @@
 # corso-angular-ngrx
+## Quiz
+ - hai familiarita con HTML, CSS e JavaScript?conosci nodejs/npm?
+ - conosci gli argomenti base delle versioni piu` evolute dell'ECMAScript? ad esempio:
+    - classi: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes
+    - moduli: https://developer.mozilla.org/enUS/docs/Web/JavaScript/Reference/Statements/import
+ - hai mai programmato in Typescript?
+ - hai sviluppato un'applicazione Angular per lavoro?
+ - hai sviluppato un'applicazione Angular per motivi personali/studio?
+ - elencami i linguaggi di programmazione che conosci meglio.
+
 
 # Linee guida
 - Condivisione del codice:
@@ -19,8 +29,7 @@ Argomenti trattati:
 Il tutorial permetterà di affrontare gli aspetti principali di Angular.
 
 
-# [NGRX store](https://ngrx.io/guide/store)
-Questo tutorial tratta argomenti avanzati, se non doveste riuscirci, fate un fischio.
-
-# [ngrx-entity-crud](https://www.npmjs.com/package/ngrx-entity-crud)
-Questo tutorial tratta argomenti avanzati, come il precedente ma in versione semplificata.
+# Livello avanzato 
+Gli argomenti di questo livello sono molto complicati senza una solida base.
+## 1) [NGRX store](https://ngrx.io/guide/store)
+## 2) [ngrx-entity-crud](https://www.npmjs.com/package/ngrx-entity-crud)
