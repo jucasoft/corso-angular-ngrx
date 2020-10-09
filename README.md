@@ -1,16 +1,17 @@
 # corso-angular-ngrx
 ## Quiz
- - hai familiarita con HTML, CSS e JavaScript?
+ - hai familiarità con HTML, CSS e JavaScript?
+ - Conosci Git?
  - conosci nodejs/npm?
- - conosci gli argomenti base delle versioni piu` evolute dell'ECMAScript? ad esempio:
+ - conosci gli argomenti base delle versioni evolute dell'ECMAScript? ad esempio:
     - classi: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes
     - moduli: https://developer.mozilla.org/enUS/docs/Web/JavaScript/Reference/Statements/import
  - hai mai programmato in Typescript?
  - hai sviluppato un'applicazione Angular per lavoro?
  - hai sviluppato un'applicazione Angular per motivi personali/studio?
- - elencami i linguaggi di programmazione che conosci meglio.
- - nei progetti in Angular hai utilizzato librerie per la gestione dello store
-
+ - elenca i linguaggi di programmazione che conosci meglio.
+ - nei progetti in Angular hai utilizzato librerie per la gestione dello store, ad esempio NGRX?
+ - sarebbe utile per il corso utilizzare Intellij completo nella versione prova.
 
 # Linee guida
 - Condivisione del codice:
@@ -29,7 +30,6 @@ Argomenti trattati:
 
 ## 2) [Tour of Heroes](https://angular.io/tutorial)
 Il tutorial permetterà di affrontare gli aspetti principali di Angular.
-
 
 # Livello avanzato 
 Gli argomenti di questo livello sono molto complicati senza una solida base.
