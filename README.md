@@ -13,7 +13,7 @@
  - nei progetti in Angular hai utilizzato librerie per la gestione dello store, ad esempio NGRX?
  - sarebbe utile per il corso utilizzare Intellij completo nella versione prova.
 
-# Linee guida
+# Line guida
 - Condivisione del codice:
    - Per i tutorial svolti su StackBlitz, basta condividere link.
    - Per i tutorial svolti sulla propria macchina, consiglio l'utilizzo di GitHub.
