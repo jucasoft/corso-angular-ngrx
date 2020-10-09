@@ -1,6 +1,7 @@
 # corso-angular-ngrx
 ## Quiz
- - hai familiarita con HTML, CSS e JavaScript?conosci nodejs/npm?
+ - hai familiarita con HTML, CSS e JavaScript?
+ - conosci nodejs/npm?
  - conosci gli argomenti base delle versioni piu` evolute dell'ECMAScript? ad esempio:
     - classi: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes
     - moduli: https://developer.mozilla.org/enUS/docs/Web/JavaScript/Reference/Statements/import
@@ -8,6 +9,7 @@
  - hai sviluppato un'applicazione Angular per lavoro?
  - hai sviluppato un'applicazione Angular per motivi personali/studio?
  - elencami i linguaggi di programmazione che conosci meglio.
+ - nei progetti in Angular hai utilizzato librerie per la gestione dello store
 
 
 # Linee guida
