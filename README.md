@@ -13,6 +13,15 @@
  - nei progetti in Angular hai utilizzato librerie per la gestione dello store, ad esempio NGRX?
  - come IDE consiglio di utilizzare Intellij completo nella versione prova.
 
+# prerequisiti
+se non dispongono i diritti amministrativi del proprio pc, seguire la guida del file DEV_ENV.md
+ - internet
+ - un pc
+ - ambiante di sviluppo con 
+    - git
+    - nodejs
+    - intellij Ultimate (versione di prova)
+
 # Linee guida
 - Condivisione del codice:
    - Per i tutorial svolti su StackBlitz, basta condividere il link.
