@@ -22,6 +22,9 @@ se non dispongono i diritti amministrativi del proprio pc, seguire la guida del 
  - git
  - nodejs
  - intellij Ultimate (versione di prova)
+ - account github.com
+ - account heroku.com
+ 
 
 # Linee guida
 - Condivisione del codice:
