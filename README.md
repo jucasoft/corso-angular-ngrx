@@ -15,6 +15,8 @@
 
 # prerequisiti
 se non dispongono i diritti amministrativi del proprio pc, seguire la guida del file DEV_ENV.md
+
+## elenco prerequisiti
  - internet
  - un pc
  - ambiante di sviluppo con 
