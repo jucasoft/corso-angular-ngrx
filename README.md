@@ -38,6 +38,7 @@ Il tutorial permetterà di affrontare gli aspetti principali di Angular, se dove
 Al termine dello svolgimento, caricate il codice su GitHub e aprite una Issue su questo repository indicando dove posso trovare il codice.
 
 # Livello avanzato 
-Gli argomenti di questo livello sono molto complicati senza una solida base.
+Gli argomenti di questo livello sono molto complicati senza una solida base.  
+Per comprendere la gestione dello store, consiglio questa serie di video gratuiti, realizzati da Fabio Biondi [NGRX Intro](https://www.youtube.com/watch?v=v8w6U3nRRFQ&list=PLUioGv_6G9YK-vpX9nY5P9qHaK3056KY3)
 ## 1) [NGRX store](https://ngrx.io/guide/store)
 ## 2) [ngrx-entity-crud](https://www.npmjs.com/package/ngrx-entity-crud)
