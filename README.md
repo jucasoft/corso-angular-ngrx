@@ -1,29 +1,35 @@
 # corso-angular-ngrx
-## Quiz
+## Prerequisiti
+### Indispensabili:
  - hai familiarità con HTML, CSS e JavaScript?
  - Conosci Git? non devi essere un drago, ti servirà per caricare gli sviluppi su GitHub.
  - conosci nodejs/npm?
+    
+### Fondamentali:
  - conosci gli argomenti base delle versioni evolute dell'ECMAScript? ad esempio:
     - classi: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes
     - moduli: https://developer.mozilla.org/enUS/docs/Web/JavaScript/Reference/Statements/import
  - hai mai programmato in Typescript?
+
+### Importanti:
  - hai sviluppato un'applicazione Angular per lavoro?
  - hai sviluppato un'applicazione Angular per motivi personali/studio?
  - elenca i linguaggi di programmazione che conosci meglio.
  - nei progetti in Angular hai utilizzato librerie per la gestione dello store, ad esempio NGRX?
  - come IDE consiglio di utilizzare Intellij completo nella versione prova.
 
-# prerequisiti
-se non si dispongono i diritti amministrativi del proprio pc, seguire la guida del file DEV_ENV.md
-
-## elenco prerequisiti
+# Ambiente di sviluppo
  - accesso a internet
  - un pc
- - git
- - nodejs
+ - GIT
+ - NodeJs:
+    - npm
+    - @angular/cli
  - intellij Ultimate (versione di prova)
- - account github.com
- - account heroku.com
+ - account gratuito github.com
+ - account gratuito heroku.com
+  
+se non si dispongono i diritti amministrativi del proprio pc, seguire la guida del file [DEV_ENV.md](DEV_ENV.md)
  
 
 # Linee guida
