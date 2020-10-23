@@ -2,9 +2,16 @@
 ## Prerequisiti
 ### Indispensabili:
  - hai familiarità con HTML, CSS e JavaScript?
- - Conosci Git? non devi essere un drago, ti servirà per caricare gli sviluppi su GitHub.
+ - Conosci Git? non devi essere un drago, basta conoscere gli argomenti trattati su queste due guide:
+     - per un ripasso https://medium.com/free-code-camp/a-developers-introduction-to-github-1034fa55c0db
+     - la guida base https://docs.github.com/en/free-pro-team@latest/github/getting-started-with-github/quickstart
+     
  - conosci nodejs/npm?
+    - per un ripasso https://medium.com/jspoint/introduction-to-node-js-a-beginners-guide-to-node-js-and-npm-eca9c408f9fe 
     
+
+    
+
 ### Fondamentali:
  - conosci gli argomenti base delle versioni evolute dell'ECMAScript? ad esempio:
     - classi: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes
