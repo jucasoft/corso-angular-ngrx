@@ -46,7 +46,7 @@ se non si dispongono i diritti amministrativi del proprio pc, seguire la guida d
 - In caso di difficoltà nello svolgimento dei tutorial aprite una Issue su questo repository GitHub, indicando più informazioni possibili.
 
 # Le basi  
-## 1) [Tour of Heroes](https://angular.io/tutorial)
+## 1) [Tour of Heroes](ANGULAR_TOUR_OF_HEROES.md)
 Il tutorial permetterà di affrontare gli aspetti principali di Angular, se doveste ritenerli troppo semplice potete passare al livello avanzato. 
 Al termine dello svolgimento, caricate il codice su GitHub e aprite una Issue su questo repository indicando dove posso trovare il codice.
 
