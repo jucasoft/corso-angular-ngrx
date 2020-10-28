@@ -1,28 +1,25 @@
 # corso-angular-ngrx
 ## Prerequisiti
 ### Indispensabili:
- - hai familiarità con HTML, CSS e JavaScript?
- - Conosci Git? non devi essere un drago, basta conoscere gli argomenti trattati su queste due guide:
+ - 9.0 hai familiarità con HTML, CSS e JavaScript?
+ - 9.1 Conosci Git? non devi essere un drago, basta conoscere gli argomenti trattati su queste due guide:
      - per un ripasso https://medium.com/free-code-camp/a-developers-introduction-to-github-1034fa55c0db
      - la guida base https://docs.github.com/en/free-pro-team@latest/github/getting-started-with-github/quickstart
      
- - conosci nodejs/npm?
+ - 9.2 conosci nodejs/npm?
     - per un ripasso https://medium.com/jspoint/introduction-to-node-js-a-beginners-guide-to-node-js-and-npm-eca9c408f9fe 
     
-
-    
-
 ### Fondamentali:
- - conosci gli argomenti base delle versioni evolute dell'ECMAScript? ad esempio:
+ - 9.3 conosci gli argomenti base delle versioni evolute dell'ECMAScript? ad esempio:
     - classi: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes
     - moduli: https://developer.mozilla.org/enUS/docs/Web/JavaScript/Reference/Statements/import
- - hai mai programmato in Typescript?
+ - 9.4 hai mai programmato in Typescript?
 
 ### Importanti:
- - hai sviluppato un'applicazione Angular per lavoro?
- - hai sviluppato un'applicazione Angular per motivi personali/studio?
+ - 9.5 hai sviluppato un'applicazione Angular per lavoro?
+ - 9.6 hai sviluppato un'applicazione Angular per motivi personali/studio?
+ - 9.7 nei progetti in Angular hai utilizzato librerie per la gestione dello store, ad esempio NGRX?
  - elenca i linguaggi di programmazione che conosci meglio.
- - nei progetti in Angular hai utilizzato librerie per la gestione dello store, ad esempio NGRX?
  - come IDE consiglio di utilizzare Intellij completo nella versione prova.
 
 # Ambiente di sviluppo
