@@ -47,6 +47,9 @@ se non si dispongono i diritti amministrativi del proprio pc, seguire la guida d
 Il tutorial permetterà di affrontare gli aspetti principali di Angular, se doveste ritenerli troppo semplice potete passare al livello avanzato. 
 Al termine dello svolgimento, caricate il codice su GitHub e aprite una Issue su questo repository indicando dove posso trovare il codice.
 
+## 2) [angular-routing-app](ANGULAR_ROUTING_APP.md)
+
+
 # Livello avanzato 
 Gli argomenti di questo livello sono molto complicati senza una solida base.  
 Per comprendere la gestione dello store, consiglio questa serie di video gratuiti, realizzati da Fabio Biondi [NGRX Intro](https://www.youtube.com/watch?v=v8w6U3nRRFQ&list=PLUioGv_6G9YK-vpX9nY5P9qHaK3056KY3)
