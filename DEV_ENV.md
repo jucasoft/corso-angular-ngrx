@@ -21,7 +21,7 @@ Preparare ambiante di sviluppo senza di diritti amministrativi.
 - digitare "ng version", per verificare il funzionamento di angular/cli
 - senza chiudere CMD creiamo il nostro primo progetto Angular
 - posizionarsi in una cartella a scelta
-- lanciare il comando "npm new testA"
+- lanciare il comando "ng new testA"
 - selezionare risposte casuali per eventuali scelte
 - entrate nella cartella del programma appena creato "cd testA"
 - digitare il comando "npm run start"
