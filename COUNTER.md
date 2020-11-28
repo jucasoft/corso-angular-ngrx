@@ -54,7 +54,7 @@ UPDATE src/app/root-store/root-store.module.ts (1060 bytes)
 aprire il file "src/app/main/models/vo/counter.ts"   
 cancellare gli attributi presenti e aggiungere l'attributo "quantity" di tipo "number"   
 aprire il file "src/app/root-store/counter-store/state.ts"   
-dobbiamo valorizzare lo stato iniziale dello store:
+valorizzare lo stato iniziale dello store:
 ```
 export const initialState: Counter = {
   quantity: 0
@@ -84,13 +84,11 @@ export enum ActionTypes {
   INCREMENT = '[Counter] increment',
   CHANGE_B = '[Counter] Change b',
 }
-//NOTA nel nostro caso non abbaimo bisogno di passare valori nell'azione, dobbiamo togliere "props<{ valueA: string }>()"
+//NOTA nel nostro caso non abbiamo bisogno di passare valori nell'azione, togliere "props<{ valueA: string }>()"
 export const Increment = createAction(ActionTypes.INCREMENT);
 export const ChangeB = createAction(ActionTypes.CHANGE_B, props<{ valueB: string }>());
 ```
-la prima azione e` fatta ora dovete creare:
-    - Decrement
-    - Reset
+Increment e` fatta ora creare: Decrement e Reset
     
 ## Reducer
 file "src/app/root-store/counter-store/reducer.ts"
@@ -105,7 +103,7 @@ export const featureReducer = createReducer(initialState,
       return {quantity};
     },
   ),
-  ... aggiungere gli altri metodi ons ...
+  ... aggiungere gli altri metodi ons per Decrement e Reset...
 );
 ```
 
@@ -129,7 +127,7 @@ export const selecQuantity: MemoizedSelector<object, number> = createSelector(
 ```
 ## Componente grafico
 file "src/app/main/views/counter/counter-main/counter-main.component.ts"   
-nel componente e` gia` presente una parte del codice che ci serve, dobbiamo aggiungere 3 metodi:
+aggiungiamo:
 
 ```
   constructor(private readonly store$: Store<RootStoreState.State>) {
