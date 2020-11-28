@@ -52,10 +52,10 @@ Al termine dello svolgimento, caricate il codice su GitHub e aprite una Issue su
 
 # Livello avanzato 
 Gli argomenti di questo livello sono molto complicati senza una solida base.  
-Per comprendere la gestione dello store, consiglio questa serie di video gratuiti, realizzati da Fabio Biondi [NGRX Intro](https://www.youtube.com/watch?v=v8w6U3nRRFQ&list=PLUioGv_6G9YK-vpX9nY5P9qHaK3056KY3)
+Per comprendere la gestione dello store, consiglio questa serie di video gratuiti, realizzati da Fabio Biondi [NGRX Intro](https://www.youtube.com/watch?v=v8w6U3nRRFQ&list=PLUioGv_6G9YK-vpX9nY5P9qHaK3056KY3).   
+Molte risorse importanti si trovano su [NGRX store](https://ngrx.io/guide/store)
 ## 1) [ngrx-entity-crud](https://www.npmjs.com/package/ngrx-entity-crud)
-## 2) [NGRX store](https://ngrx.io/guide/store)
-## 3) [Counter ngrx](COUNTER.md)
+## 2) [Counter ngrx](COUNTER.md)
 
 # [Risorse utili](RISORSE_UTILI.md)
 
