@@ -46,24 +46,29 @@ per prima cosa dobbiamo cancellare tutte le voci di menu presenti:
 creaiamo una voce di menu di tipo MenuModel per aprire una sezione dell'applicazione.
 le informazioni che ci necessitano sono:
     la stringa che vogliamo appaia nel menu  
-        labela => Coin  
+        "Coin"  
     l'icona del menu  
-        icona => i pi-fw pi-user-plus
+        "i pi-fw pi-user-plus"   
+    rotta web
+        coin
 
+```
+this.items = [
+  {
+    label: 'User',
+    icon: 'pi pi-fw pi-user-plus',
+    command: (event$) => {
+      // invoco il router per cambiare pagina
+      this.store$.dispatch(RouterStoreActions.RouterGo({path: ['coin']}));
 
-            {
-              label: 'User',
-              icon: 'pi pi-fw pi-user-plus',
-              command: (event$) => {
-                // invoco il router per cambiare pagina
-                // this.store$.dispatch(RouterStoreActions.RouterGo({path: ['????']}));
-
-                // salvo nello store del menù l'elemento selezionato.
-                this.store$.dispatch(SlideMenuStoreActions.Select({
-                  item: {
-                    data: {},
-                    breadcrumb: ['File', 'New', 'User']
-                  }
-                }));
-              }
-            },
+      // salvo nello store del menù l'elemento selezionato.
+      this.store$.dispatch(SlideMenuStoreActions.Select({
+        item: {
+          data: {},
+          breadcrumb: ['Sezione ', 'Coin'] // breadcrumb 
+        }
+      }));
+    }
+  }
+];
+```
