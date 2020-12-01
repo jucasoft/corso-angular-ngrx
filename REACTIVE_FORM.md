@@ -77,3 +77,39 @@ aggiungere al pulsante "save":
 ```
 [disabled]="!form.valid"
 ```
+
+## validatori
+
+verificare che siano presenti i seguenti file:
+ - src/app/core/components/form-error-msg/form-error-msg.component.ts
+ - src/app/core/components/form-error-msg/form-error-msg.module.ts
+ - src/app/core/utils/j-validators.ts
+
+se non fossero presti recuperarli da [ngrx-entity-crud-prime-ng-boilerplate](https://github.com/jucasoft/ngrx-entity-crud-prime-ng-boilerplate)
+
+aprire il file: "src/app/main/views/coin/coin-edit/coin-edit.component.ts"
+aggiungere validatori dalla classe "JValidators", ad esempio:
+
+```
+...
+  makeFrom(): void {
+    this.id = this.fb.control({value: '', disabled: true});
+    this.name = this.fb.control('', JValidators.required());
+    this.value = this.fb.control('', [JValidators.required(), JValidators.maxLength(2)]);
+...
+```
+
+aprire il file: "src/app/main/views/coin/coin-edit/coin-edit.component.html"
+modificare
+
+```
+...
+<div class="p-grid">
+  <div class="p-col">
+    <label for="name"><strong>name</strong></label><br>
+    <input id="name" name="name" type="text" class="form-control" pInputText [formControl]="name"/>
+    <app-form-error-msg [fc]="name"></app-form-error-msg>  <!-- componente da aggiungere -->
+  </div>
+</div>
+...
+```
