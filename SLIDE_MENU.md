@@ -1,68 +1,48 @@
-# Reactive form
-Modificha del menu, per permettere l'apertura delle sezioni create.
-Prerequisito: creare l'applicaizone seguendo il tutorial [ngrx-entity-crud](https://www.npmjs.com/package/ngrx-entity-crud)
+# SlideMenu
+Modifica del menu, per permettere l'apertura delle sezioni create.  
+Prerequisito: creare l'applicaizone seguendo il tutorial [ngrx-entity-crud](https://www.npmjs.com/package/ngrx-entity-crud)  
+Le voci di menu sono di tipo [MenuModel](https://primefaces.org/primeng/showcase/#/menumodel)
 
-Il componente del menu che dobbiamo modificare fa parte della libreria di [PrimeNg](https://primefaces.org/primeng/showcase/), in particolare dobbiamo modificare la lista di [MenuModel](https://primefaces.org/primeng/showcase/#/menumodel)
+N.B. dalla versione 11.3.0 le voci di menu si trovano nello store, per versioni precedenti dell'appicazione bisogna mergiare i seguenti file:
+```
+CREATED "src/app/main/components/slide-menu/slide-menu.component.ts"
+UPDATE  "src/app/root-store/slide-menu-store/operators.ts"
+UPDATE  "src/app/root-store/slide-menu-store/selectors.ts"
+UPDATE  "src/app/root-store/slide-menu-store/state.ts"
+```
 
-aprire file: "src/app/main/components/slide-menu/slide-menu.component.ts"
-l'elenco delle voci di menu sono l'attributo:
+## Aggiungere elementi al SlideMenu
+aprire file: "src/app/root-store/slide-menu-store/state.ts"
+le voci di menu sono l'attributo `items`:
 ```
 ...
-items: MenuItem[];
-...
-```
-
-vengono settate staticamente nel metodo ngOnInit:
-```
-...
-  ngOnInit(): void {
-    this.items = [{
-      label: 'File (demonstrative)',
-      items: [
-        {label: 'New  (demonstrative)', icon: 'pi pi-fw pi-plus'},
-        {label: 'Download  (demonstrative)', icon: 'pi pi-fw pi-download'}
-      ]
-    },
-      {
-        label: 'Edit (demonstrative)',
-        items: [
-          {label: 'Add User (demonstrative)', icon: 'pi pi-fw pi-user-plus'},
-          {label: 'Remove User (demonstrative)', icon: 'pi pi-fw pi-user-minus'}
-        ]
-      }];
-}
+export const initialState: State = {
+  open: false,
+  item: {breadcrumb: [], data: null},
+  items: [] // <== elenco delle voci di menu
+};
 ...
 ```
 
-per prima cosa dobbiamo cancellare tutte le voci di menu presenti:
-```
-...
-  ngOnInit(): void {
-    this.items = [];
-  }
-...
-```
-
-creaiamo una voce di menu di tipo MenuModel per aprire una sezione dell'applicazione.
-le informazioni che ci necessitano sono:
-    la stringa che vogliamo appaia nel menu  
+le informazioni necessarie per la creazione di una nuova voce di menu cliccabile sono:
+    label 
         "Coin"  
-    l'icona del menu  
+    icona:
         "i pi-fw pi-user-plus"   
     rotta web
         coin
 
+nuova voce di menu da aggiungere all'attributo `items`
 ```
-this.items = [
   {
-    label: 'User',
-    icon: 'pi pi-fw pi-user-plus',
+    label: 'Coin',
+    icon: 'pi pi-fw pi-user-plus', 
     command: (event$) => {
       // invoco il router per cambiare pagina
-      this.store$.dispatch(RouterStoreActions.RouterGo({path: ['coin']}));
+      event$.item.store$.dispatch(RouterStoreActions.RouterGo({path: ['coin']}));
 
       // salvo nello store del menù l'elemento selezionato.
-      this.store$.dispatch(SlideMenuStoreActions.Select({
+      event$.item.store$.dispatch(SlideMenuStoreActions.Select({
         item: {
           data: {},
           breadcrumb: ['Sezione ', 'Coin'] // breadcrumb 
@@ -70,5 +50,5 @@ this.items = [
       }));
     }
   }
-];
+
 ```

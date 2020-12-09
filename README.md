@@ -56,10 +56,12 @@ Per comprendere la gestione dello store, consiglio questa serie di video gratuit
 Molte risorse importanti si trovano su [NGRX store](https://ngrx.io/guide/store)
 ## 1) [ngrx-entity-crud](https://www.npmjs.com/package/ngrx-entity-crud) tutorial per la creazione di un'applicaizone ngrx crud.
 ### Di seguito una lista di tutorial su come personalizzare l'applicaizone ngrx crud:
- - [SLIDE MENU](SLIDE_MENU.md), aggiungere voci di menu per poter aprire le nuove pagine create
- - [COUNTER](COUNTER.md), creare una sezione custom dello store NGRX
- - [REACTIVE FORM](REACTIVE_FORM.md), personalizzare il form per l'inserimento e la modifica dei valori.
- - [CUSTOM COLUMNS](CUSTOM_COLUMNS.MD), personalizzare la struttura della tabella
+ - [SLIDE MENU](SLIDE_MENU.md), aggiungere voci di menu
+ - [COUNTER](COUNTER.md), sezione custom dello store NGRX
+ - [REACTIVE FORM](REACTIVE_FORM.md), personalizzare il form.
+ - [CUSTOM COLUMNS](CUSTOM_COLUMNS.md), personalizzare la struttura tabella
+ - [AUTH](AUTH.md), implementazione dell'autenticazione in ngrx
+ - [DATA_COMPOSITION](DATA_COMPOSITION.md) 
 
 # [Risorse utili](RISORSE_UTILI.md)
 
