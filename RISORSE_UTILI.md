@@ -8,3 +8,5 @@
 
 ## materiale di vario genere
  - https://github.com/sudheerj/angular-interview-questions
+ - https://www.youtube.com/watch?v=fom80TujpYQ&ab_channel=CodAffection
+ - https://www.youtube.com/watch?v=fRVtMLAD_9s&list=PLKpsfcgjUrwS6hZgiRfbQ4RMGOTh_f12S&ab_channel=AdvancedSoftwareTutorials
