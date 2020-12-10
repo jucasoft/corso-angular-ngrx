@@ -18,7 +18,7 @@ aggiungere l'attributo a tutte le voci di menu per permettere la profilazione:
 ```
 ...
 // @ts-ignore  
-roles: ['roleA']
+roles: ['roleA'] // <== utilizzando il ruolo 'guest' permette di vedere la voce di menu sempre, anche senza autenticazione.
 ...
 ```
 aprire il file `src/app/root-store/slide-menu-store/selectors.ts`
@@ -28,7 +28,7 @@ export const selectItemsAuth: MemoizedSelector<object, MenuItem[]> = createSelec
   selectItems,
   AuthStoreSelectors.selectRoles,
   (menuItems: MenuItem[], roles) => {
-    roles = roles ? roles : [];
+    roles = [roles, 'guest'] ? roles : ['guest'];
     return menuItems.reduce((previous, current) => {
       console.log('reduce.()');
       // @ts-ignore
