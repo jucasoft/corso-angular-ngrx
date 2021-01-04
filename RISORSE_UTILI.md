@@ -2,6 +2,7 @@
 ### Italiano
  - tutti i contenuti video di Fabio Biondi
 ### Inglese
+ - https://ngrx-course.com corso gratuito molto completo
  - https://www.linkedin.com/learning/angular-essential-training-2
  - https://www.linkedin.com/learning/angular-building-an-interface
 ## corsi a pagamento
