@@ -113,3 +113,20 @@ modificare
 </div>
 ...
 ```
+
+## cambiare dinamicamente dei validatori
+alla modifica dal campo formControlParentName, abilito e aggiungo un validatore al campo formControlChildName
+```
+this.formControlParentName.valueChanges.subscribe(val => {
+  if(val){
+    this.formControlChildName.setValidators([Validators.required]);
+    this.formControlChildName.updateValueAndValidity();
+    this.formControlChildName.enable();
+  } else {
+    this.formControlChildName.clearValidators();
+    this.formControlChildName.updateValueAndValidity();
+    this.formControlChildName.disable();
+
+  }
+});
+```
