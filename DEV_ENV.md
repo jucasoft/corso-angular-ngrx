@@ -46,17 +46,12 @@ Preparare ambiante di sviluppo senza di diritti amministrativi.
 	   	
 ### 3.2 CONFIGURAZIONE:
 - all'apertura di intellij appare la finestra "Welcome IntelliJ IDEA" 
-- cliccare su "Configure" (si trova nella parte bassa della finestra)
-- click su "Settings"
+
 #### 3.2.1 configurare git:
-- cliccare sulla voce di menù "Version control -> git"
-- si apre la pagina di configurazione di git
-- inserire nel campo "Path to git executable" il puntamento al file "git.exe" che dovrebbe trovarsi in "C:\DEV\kit\git\bin\git.exe"
-   
+- aprire command prompt, digitatare "git -v", in caso di non riconoscimento del comando settare la variabile d'ambiente di git, il path sarà "C:\DEV\kit\git\bin"
+
 #### 3.2.2 configurare nodejs
-- cliccare sulla voce di menù "Languages & Frameworks -> NodeJs and NPM"
-- si apre la pagina di configurazione di nodejs
-- nel campo "Node interpreter" indicare il percorso di node.exe che dovrebbe essere "C:\DEV\kit\node\node-xxxxxxxx\node.exe"
-   
+- aprire command prompt, digitatare "node -v" e successivamente "npm -v" in caso di non riconoscimento dei comandi settare la variabile d'ambiente di node "C:\DEV\kit\node"
+
    
    
