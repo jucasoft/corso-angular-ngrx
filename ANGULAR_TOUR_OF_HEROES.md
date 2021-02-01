@@ -13,3 +13,6 @@ Tutoria ufficiale Angular partendo da un fork su GitHub.com
  - Selezionare una cartella di destinazione.
  - Al termine del download continuare con il tutorial da [toh-pt0#serve-the-application](https://angular.io/tutorial/toh-pt0#serve-the-application)
  
+## problemi noti
+
+ - quando si arriva alla sezione 'Displaying a 404 page' nella guida non viene indicato come creare il componente 'PageNotFoundComponent', quindi se si hanno errori durante l'importazione ricordarsi di lanciare il comando per creare il componente: 'ng generate component PageNotFound'
