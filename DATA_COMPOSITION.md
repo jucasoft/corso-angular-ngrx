@@ -21,6 +21,32 @@ aggiungere l'attributo a tutte le voci di menu per permettere la profilazione:
 roles: ['roleA'] // <== utilizzando il ruolo 'guest' permette di vedere la voce di menu sempre, anche senza autenticazione.
 ...
 ```
+ad esempio:
+
+```
+src/app/root-store/slide-menu-store/selectors.ts
+...
+{
+    label: 'Coin',
+    icon: 'pi pi-fw pi-user-plus',
+    // @ts-ignore
+    roles: ['roleA', 'guest'],
+    command: (event$) => {
+      // invoco il router per cambiare pagina
+      event$.item.store$.dispatch(RouterStoreActions.RouterGo({path: ['coin']}));
+
+      // salvo nello store del menù l'elemento selezionato.
+      event$.item.store$.dispatch(SlideMenuStoreActions.Select({
+        item: {
+          data: {},
+          breadcrumb: ['Sezione ', 'Coin'] // breadcrumb
+        }
+      }));
+    }
+  }
+...
+```
+
 aprire il file `src/app/root-store/slide-menu-store/selectors.ts`
 creare una nuova select:
 ```
@@ -28,7 +54,7 @@ export const selectItemsAuth: MemoizedSelector<object, MenuItem[]> = createSelec
   selectItems,
   AuthStoreSelectors.selectRoles,
   (menuItems: MenuItem[], roles) => {
-    roles = [roles, 'guest'] ? roles : ['guest'];
+    roles = !!roles ? roles : ['guest'];
     return menuItems.reduce((previous, current) => {
       console.log('reduce.()');
       // @ts-ignore
