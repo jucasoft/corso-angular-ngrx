@@ -1,65 +1,65 @@
 #NGRX_SELECTOR
 
-##di seguito elencate tutte le select con relative spiegazioni:
+##all the select with relative explanations are shown below:
 
 - ###selectIds
-    - utilizzata per selezionare
-    - **parametri necessari**:
-        -
+    - used to select a group of ids
+    - **Parameters**:
+        - (state: V) => string[] | number[]
 - ###selectEntities
-    - utilizzata per selezionare
-    - **parametri necessari**:
-        -
+    - used to select a group of entities
+    - **Parameters**:
+        - (state: V) => Dictionary<T>
 - ###selectAll
-    - utilizzata per selezionare
-    - **parametri necessari**:
-        -
+    - used to select all items
+    - **Parameters**:
+        - (state: V) => T[]
 - ###selectTotal
-    - utilizzata per selezionare
-    - **parametri necessari**:
-        -
+    - used to select the sum of items
+    - **Parameters**:
+        - (state: V) => number
 - ###selectItemSelected
-    - utilizzata per selezionare
-    - **parametri necessari**:
-        -
+    - used to select selected item
+    - **Parameters**:
+        - (state: V) => T
 - ###selectItemsSelected
-     - utilizzata per selezionare
-    - **parametri necessari**:
-        -
+     - used to select a group of selected items
+    - **Parameters**:
+        - (state: V) => T[]
 - ###selectLastCriteria
-    - utilizzata per selezionare
-    - **parametri necessari**:
-        -
+    - used to select last criteria
+    - **Parameters**:
+        - (state: V) => ICriteria
 - ###selectError
-    - utilizzata per selezionare
-    - **parametri necessari**:
-        -
+    - used to select an error
+    - **Parameters**:
+        - (state: V) => string
 - ###selectIsLoading
-    - utilizzata per selezionare
-    - **parametri necessari**:
-        -
+    - returns true if there are calls in progress
+    - **Parameters**:
+        - (state: V) => boolean
 - ###selectIsLoaded
-    - utilizzata per selezionare
-    - **parametri necessari**:
-        -
+    - returns true if all calls are completed
+    - **Parameters**:
+        - (state: V) => boolean
 - ###selectFilters
-    - utilizzata per selezionare
-    - **parametri necessari**:
-        -
+    - used to select filters
+    - **Parameters**:
+        - (state: V) => {[s: string]: FilterMetadata;}
 - ###selectFilteredItems
-    - utilizzata per selezionare
-    - **parametri necessari**:
-        -
+    - used to select filtered items
+    - **Parameters**:
+        - MemoizedSelector<V, T[]>
 - ###selectIdSelected
-    - utilizzata per selezionare
-    - **parametri necessari**:
-        -
+    - used to select selected id
+    - **Parameters**:
+        - (state: V) => string | number
 - ###selectIdsSelected
-    - utilizzata per selezionare
-    - **parametri necessari**:
-        -
+    - used to select selected ids
+    - **Parameters**:
+        - (state: V) => string[] | number[]
 - ###selectResponses
-    - utilizzata per selezionare
-    - **parametri necessari**:
-        -
+    - used to select response variable contained in the formula
+    - **Parameters**:
+        - (state: V) => OptResponse<T>[]
 
