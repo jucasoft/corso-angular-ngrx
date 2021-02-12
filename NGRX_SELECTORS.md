@@ -1,15 +1,65 @@
-#NGRX_ENTITY_CRUD_DOC
+#NGRX_SELECTOR
 
-##di seguito elencate tutte le action con relative spiegazioni:
+##di seguito elencate tutte le select con relative spiegazioni:
 
-- ###SearchRequest
-    - azione utilizzata per eseguire delle ricerche asincrone
+- ###selectIds
+    - utilizzata per selezionare
     - **parametri necessari**:
-        - mode?: 'REFRESH' | 'upsertMany' | 'addAll';
-        - queryParams?: any; 
-        - path?: any[];
-        - onFault?: Action[];
-        - onResult?: Action[];
-        - dispatchResponse?: boolean;
-        - type: string
- ring;
+        -
+- ###selectEntities
+    - utilizzata per selezionare
+    - **parametri necessari**:
+        -
+- ###selectAll
+    - utilizzata per selezionare
+    - **parametri necessari**:
+        -
+- ###selectTotal
+    - utilizzata per selezionare
+    - **parametri necessari**:
+        -
+- ###selectItemSelected
+    - utilizzata per selezionare
+    - **parametri necessari**:
+        -
+- ###selectItemsSelected
+     - utilizzata per selezionare
+    - **parametri necessari**:
+        -
+- ###selectLastCriteria
+    - utilizzata per selezionare
+    - **parametri necessari**:
+        -
+- ###selectError
+    - utilizzata per selezionare
+    - **parametri necessari**:
+        -
+- ###selectIsLoading
+    - utilizzata per selezionare
+    - **parametri necessari**:
+        -
+- ###selectIsLoaded
+    - utilizzata per selezionare
+    - **parametri necessari**:
+        -
+- ###selectFilters
+    - utilizzata per selezionare
+    - **parametri necessari**:
+        -
+- ###selectFilteredItems
+    - utilizzata per selezionare
+    - **parametri necessari**:
+        -
+- ###selectIdSelected
+    - utilizzata per selezionare
+    - **parametri necessari**:
+        -
+- ###selectIdsSelected
+    - utilizzata per selezionare
+    - **parametri necessari**:
+        -
+- ###selectResponses
+    - utilizzata per selezionare
+    - **parametri necessari**:
+        -
+

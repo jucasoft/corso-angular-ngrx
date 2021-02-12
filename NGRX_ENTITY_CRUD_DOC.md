@@ -1,98 +1,98 @@
 #NGRX_ENTITY_CRUD_DOC
 
-##di seguito elencate tutte le action con relative spiegazioni:
+##all the actions with relative explanations are shown below:
 
 - ###SearchRequest
-    - azione utilizzata per eseguire delle ricerche asincrone
-    - **parametri necessari**:
-        - mode?: 'REFRESH' | 'upsertMany' | 'addAll';
-        - queryParams?: any; 
-        - path?: any[];
-        - onFault?: Action[];
-        - onResult?: Action[];
-        - dispatchResponse?: boolean;
+    - action used to execute asynchronous researches
+    - **Parameters**:
+        - mode?: 'REFRESH' | 'upsertMany' | 'addAll'
+        - queryParams?: any
+        - path?: any[]
+        - onFault?: Action[]
+        - onResult?: Action[]
+        - dispatchResponse?: boolean
         - type: string
 - ###DeleteRequest
-    - azione utilizzata per eseguire una richiesta di eliminazione di un elemento
-    - **parametri necessari**:
+    - action used to execute a request to remove an item
+    - **Parameters**:
         - item: T
-        - path?: any[];
-        - onFault?: Action[];
-        - onResult?: Action[];
-        - dispatchResponse?: boolean;
+        - path?: any[]
+        - onFault?: Action[]
+        - onResult?: Action[]
+        - dispatchResponse?: boolean
 - ###DeleteManyRequest
-    - azione utilizzata per eseguire una richiesta di eliminazione di più elementi
-    - **parametri necessari**:
+    - action used to execute a request to remove more items
+    - **Parameters**:
         - item: T
-        - path?: any[];
-        - onFault?: Action[];
-        - onResult?: Action[];
-        - dispatchResponse?: boolean;
+        - path?: any[]
+        - onFault?: Action[]
+        - onResult?: Action[]
+        - dispatchResponse?: boolean
 - ###CreateRequest
-    - azione utilizzata per eseguire una richiesta di creazione di un nuovo elemento
-    - **parametri necessari**:
+    - action used to execute a request to create a new item
+    - **Parameters**:
         - item: T
-        - path?: any[];
-        - onFault?: Action[];
-        - onResult?: Action[];
-        - dispatchResponse?: boolean;
+        - path?: any[]
+        - onFault?: Action[]
+        - onResult?: Action[]
+        - dispatchResponse?: boolean
 - ###CreateManyRequest
-    - azione utilizzata per eseguire una richiesta di creazione di più elementi
-    - **parametri necessari**:
+    - action used to execute a request to create more new items
+    - **Parameters**:
         - item: T
-        - path?: any[];
-        - onFault?: Action[];
-        - onResult?: Action[];
-        - dispatchResponse?: boolean;
+        - path?: any[]
+        - onFault?: Action[]
+        - onResult?: Action[]
+        - dispatchResponse?: boolean
 - ###SelectRequest
-    - azione utilizzata per eseguire una richiesta di selezione su un elemento
-    - **parametri necessari**:
+    - action used to execute a request to select an item
+    - **Parameters**:
         - item: T
-        - path?: any[];
-        - onFault?: Action[];
-        - onResult?: Action[];
-        - dispatchResponse?: boolean;
+        - path?: any[]
+        - onFault?: Action[]
+        - onResult?: Action[]
+        - dispatchResponse?: boolean
 - ###EditRequest
-    - azione utilizzata per eseguire una richiesta di modifica su un elemento
-    - **parametri necessari**:
+    - action used to execute a request to modify an item
+    - **Parameters**:
         - item: T
-        - path?: any[];
-        - onFault?: Action[];
-        - onResult?: Action[];
-        - dispatchResponse?: boolean;
+        - path?: any[]
+        - onFault?: Action[]
+        - onResult?: Action[]
+        - dispatchResponse?: boolean
 - ###EditManyRequest
-    - azione utilizzata per eseguire una richiesta di modifica su più elementi
-    - **parametri necessari**:
+    - action used to execute a request to modify more items
+    - **Parameters**:
         - item: T
-        - path?: any[];
-        - onFault?: Action[];
-        - onResult?: Action[];
-        - dispatchResponse?: boolean;
+        - path?: any[]
+        - onFault?: Action[]
+        - onResult?: Action[]
+        - dispatchResponse?: boolean
 - ###Reset
-    - azione utilizzata per eseguire un reset dello store
-    - **parametri necessari**:
-        -  type: string;
+    - action used to execute a store reset
+    - **Parameters**:
+        -  type: string
 - ###Filters  
-    - azione utilizzata per applicare dei filtri sui dati
-    - **parametri necessari**:
+    - action used to apply some filters on data
+    - **Parameters**:
         - filters: { [s: string]: FilterMetadata;}
 - ###SelectItems  
-    - azione utilizzata per indicare un gruppo di elementi da selezionare
-    - **parametri necessari**:
-        -   items: T[];
+    - action used to identify a group of items to select
+    - **Parameters**:
+        -   items: T[]
 - ###SelectItem  
-    - azione utilizzata per indicare un singolo elemento da selezionare
-    - **parametri necessari**:
-        -   item: T;
+    - action used to identify a single item to select
+    - **Parameters**:
+        -   item: T
 - ###Edit 
-    - azione utilizzata per modificare un elemento direttamente sullo store
-    - **parametri necessari**:
-        -  item: T;
+    - action used to modify an item on the store
+    - **Parameters**:
+        -  item: T
 - ###Create  
-    - azione utilizzata per creare un elemento direttamente nello store
-    - **parametri necessari**:
-        -  item: T;
+    - action used to create an item on the store
+    - **Parameters**:
+        -  item: T
 - ###Delete  
-    - azione utilizzata per eliminare un elemento direttamente dallo store
-    - **parametri necessari**:
-        -  id: string;
+    - action used to remove an item on the store
+    - **Parameters**:
+        -  id: string
