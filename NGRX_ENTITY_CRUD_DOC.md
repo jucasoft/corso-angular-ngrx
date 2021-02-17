@@ -23,7 +23,7 @@
 - ###DeleteManyRequest
     - action used to execute a request to remove more items
     - **Parameters**:
-        - item: T
+        - items: T[]
         - path?: any[]
         - onFault?: Action[]
         - onResult?: Action[]
@@ -39,7 +39,7 @@
 - ###CreateManyRequest
     - action used to execute a request to create more new items
     - **Parameters**:
-        - item: T
+        - items: T[]
         - path?: any[]
         - onFault?: Action[]
         - onResult?: Action[]
@@ -63,7 +63,7 @@
 - ###EditManyRequest
     - action used to execute a request to modify more items
     - **Parameters**:
-        - item: T
+        - items: T[]
         - path?: any[]
         - onFault?: Action[]
         - onResult?: Action[]
