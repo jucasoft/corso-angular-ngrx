@@ -69,8 +69,8 @@ const jwt = require('express-jwt');
 const jwksRsa = require('jwks-rsa');
 
 const authConfig = {
-  domain: 'bodydata.eu.auth0.com',
-  audience: 'https://bodydata.eu.auth0.com/api/v2/',
+  domain: '',
+  audience: '',
   appUri: 'http://localhost:4200',
 };
 
