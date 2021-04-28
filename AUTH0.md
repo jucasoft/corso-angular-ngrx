@@ -16,23 +16,27 @@ integrazione autenticazione/oauth0
 ![passaggio n.3](./img/03.png)
 ![passaggio n.4](./img/04.png)
 
--eseguirre da terminale:
+- eseguirre da terminale:
 
 ```
 npm install @auth0/auth0-angular
 ```
 
-vedi guida https://www.npmjs.com/package/@auth0/auth0-angular
+- segui guide 
 
--sostituire i parametri (domain,audience,clientId) con quelli che abbiamo generato su https://manage.auth0.com/dashboard
+https://www.npmjs.com/package/@auth0/auth0-angular
 
--eseguirre da terminale:
+https://offering.solutions/blog/articles/2021/02/01/using-auth0-in-angular-with-ngrx/#adding-the-actions
+
+- sostituire i parametri (domain,audience,clientId) con quelli che abbiamo generato su https://manage.auth0.com/dashboard
+
+- eseguirre da terminale:
 
 ```
 npm install --save express-jwt jwks-rsa express-jwt-authz
 ```
 
--elimina da auth-store.module.js
+- elimina da auth-store.module.js
 
 ```
 AuthModule.forRoot({
@@ -42,7 +46,7 @@ AuthModule.forRoot({
     }),
 ```
 
--importa in app.module.ts
+- importa in app.module.ts
 
 ```
 AuthModule.forRoot({
@@ -59,7 +63,7 @@ AuthModule.forRoot({
     }),
 ```
 
--aggiungi il seguente codice a server.js:
+- aggiungi il seguente codice a server.js:
 
 subito prima si const api
 
@@ -98,4 +102,4 @@ prima di server.use(api, middlewares);
 server.use('/api/v2', checkJwt);
 ```
 
--a questo punto la nostra autenticazione funzionerà correttamente
+- a questo punto la nostra autenticazione funzionerà correttamente
