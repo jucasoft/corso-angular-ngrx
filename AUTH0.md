@@ -16,46 +16,62 @@ integrazione autenticazione/oauth0
 ![passaggio n.3](./img/03.png)
 ![passaggio n.4](./img/04.png)
 
-eseguirre da terminale:
+-eseguirre da terminale:
+
 ```
 npm install @auth0/auth0-angular
+```
+
+vedi guida https://www.npmjs.com/package/@auth0/auth0-angular
+
+-sostituire i parametri (domain,audience,clientId) con quelli che abbiamo generato su https://manage.auth0.com/dashboard
+
+-eseguirre da terminale:
+
+```
 npm install --save express-jwt jwks-rsa express-jwt-authz
 ```
 
--iserire in app.module.ts imports:
+-elimina da auth-store.module.js
 
 ```
 AuthModule.forRoot({
-domain: 'bodydata.eu.auth0.com',
-clientId: 'lCN6OO71OXxgt9Rz2dC5BakIwK9mmfL3',
-redirectUri: window.location.origin,
-// The AuthHttpInterceptor configuration
-httpInterceptor: {
-allowedList: [
-'/api',
-'/api/*',
-],
-},
-}),
+      domain: '',
+      clientId: '',
+      redirectUri: window.location.origin,
+    }),
 ```
 
--sostituire il contenuto di server.js con:
+-importa in app.module.ts
 
 ```
-const express = require('express');
-const jsonServer = require('json-server');
-const server = jsonServer.create();
-const path = require('path');
-const router = jsonServer.router(path.join(__dirname, 'db.json'));
-const middlewares = jsonServer.defaults();
+AuthModule.forRoot({
+      domain: '',
+      clientId: '',
+      redirectUri: window.location.origin,
+      // The AuthHttpInterceptor configuration
+      httpInterceptor: {
+        allowedList: [
+          '/api',
+          '/api/*',
+        ],
+      },
+    }),
+```
+
+-aggiungi il seguente codice a server.js:
+
+subito prima si const api
+
+```
 const cors = require('cors');
 const jwt = require('express-jwt');
 const jwksRsa = require('jwks-rsa');
 
 const authConfig = {
-  domain: '',
-  audience: '',
-  appUri: '',
+  domain: 'bodydata.eu.auth0.com',
+  audience: 'https://bodydata.eu.auth0.com/api/v2/',
+  appUri: 'http://localhost:4200',
 };
 
 if (!authConfig.domain || !authConfig.audience) {
@@ -74,34 +90,12 @@ const checkJwt = jwt({
   issuer: `https://${authConfig.domain}/`,
   algorithms: ['RS256'],
 });
-
-
-const api = '/api/v1';
-// Serve static files....
-server.use(express.static(__dirname + '/dist/body-data'));
-
-server.use('/api/v2', checkJwt);
-server.use(api, middlewares);
-server.use(api, router);
-
-server.get('**', function (req, res) {
-  res.sendFile(path.join(__dirname + '/dist/body-data/index.html'));
-});
-
-router.render = (req, res) => {
-  res.jsonp({
-    data: res.locals.data
-  })
-};
-
-server.listen(process.env.PORT || 3000, (res) => {
-  console.log('JSON Server is running on: http://localhost:3000');
-});
-
 ```
 
-sostituire i parametri (domain,audience,clientId) con quelli che abbiamo generato su https://manage.auth0.com/dashboard
+prima di server.use(api, middlewares);
 
--inserire contenuto cartella auth-store.zip in root-store.
+```
+server.use('/api/v2', checkJwt);
+```
 
-a questo punto la nostra autenticazione funzionerà correttamente
+-a questo punto la nostra autenticazione funzionerà correttamente
