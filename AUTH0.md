@@ -4,6 +4,7 @@ integrazione autenticazione/oauth0
 
 ## prerequisiti
 
+-  - ngrx-entity-crud >= 11.6.65
 - prima di cominciare con la procedura, committare tutto, in modo da poter revertare in caso di errori.
 
 ## procedura
@@ -20,31 +21,16 @@ integrazione autenticazione/oauth0
 
 ```
 npm install @auth0/auth0-angular
+npm install --save express-jwt jwks-rsa express-jwt-authz
 ```
 
-- segui guide 
+- per approfondire 
 
 https://www.npmjs.com/package/@auth0/auth0-angular
 
 https://offering.solutions/blog/articles/2021/02/01/using-auth0-in-angular-with-ngrx/#adding-the-actions
 
-- sostituire i parametri (domain,audience,clientId) con quelli che abbiamo generato su https://manage.auth0.com/dashboard
-
-- eseguirre da terminale:
-
-```
-npm install --save express-jwt jwks-rsa express-jwt-authz
-```
-
-- elimina da auth-store.module.js
-
-```
-AuthModule.forRoot({
-      domain: '',
-      clientId: '',
-      redirectUri: window.location.origin,
-    }),
-```
+- tasto destro su src --> new --> angular schematic e selezionare auth0, confermare senza inserire parametri.
 
 - importa in app.module.ts
 
@@ -65,7 +51,7 @@ AuthModule.forRoot({
 
 - aggiungi il seguente codice a server.js:
 
-subito prima si const api
+  subito prima si const api
 
 ```
 const cors = require('cors');
@@ -96,10 +82,12 @@ const checkJwt = jwt({
 });
 ```
 
-prima di server.use(api, middlewares);
+  prima di server.use(api, middlewares);
 
 ```
 server.use('/api/v2', checkJwt);
 ```
 
+- sostituire i parametri (domain,audience,clientId) con quelli che abbiamo generato su https://manage.auth0.com/dashboard
+  
 - a questo punto la nostra autenticazione funzionerà correttamente
