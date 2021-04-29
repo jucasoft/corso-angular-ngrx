@@ -4,7 +4,7 @@ integrazione autenticazione/oauth0
 
 ## prerequisiti
 
--  - ngrx-entity-crud >= 11.6.65
+- ngrx-entity-crud >= 11.6.65
 - prima di cominciare con la procedura, committare tutto, in modo da poter revertare in caso di errori.
 
 ## procedura
