@@ -1,0 +1,65 @@
+#NGRX_SELECTOR
+
+##all the select with relative explanations are shown below:
+
+- ###selectIds
+    - used to select a group of ids
+    - **Parameters**:
+        - (state: V) => string[] | number[]
+- ###selectEntities
+    - used to select a group of entities
+    - **Parameters**:
+        - (state: V) => Dictionary<T>
+- ###selectAll
+    - used to select all items
+    - **Parameters**:
+        - (state: V) => T[]
+- ###selectTotal
+    - used to select the sum of items
+    - **Parameters**:
+        - (state: V) => number
+- ###selectItemSelected
+    - used to select selected item
+    - **Parameters**:
+        - (state: V) => T
+- ###selectItemsSelected
+     - used to select a group of selected items
+    - **Parameters**:
+        - (state: V) => T[]
+- ###selectLastCriteria
+    - used to select last criteria
+    - **Parameters**:
+        - (state: V) => ICriteria
+- ###selectError
+    - used to select an error
+    - **Parameters**:
+        - (state: V) => string
+- ###selectIsLoading
+    - returns true if there are calls in progress
+    - **Parameters**:
+        - (state: V) => boolean
+- ###selectIsLoaded
+    - returns true if all calls are completed
+    - **Parameters**:
+        - (state: V) => boolean
+- ###selectFilters
+    - used to select filters
+    - **Parameters**:
+        - (state: V) => {[s: string]: FilterMetadata;}
+- ###selectFilteredItems
+    - used to select filtered items
+    - **Parameters**:
+        - MemoizedSelector<V, T[]>
+- ###selectIdSelected
+    - used to select selected id
+    - **Parameters**:
+        - (state: V) => string | number
+- ###selectIdsSelected
+    - used to select selected ids
+    - **Parameters**:
+        - (state: V) => string[] | number[]
+- ###selectResponses
+    - used to select response variable contained in the formula
+    - **Parameters**:
+        - (state: V) => OptResponse<T>[]
+
