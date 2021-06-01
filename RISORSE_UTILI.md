@@ -14,3 +14,8 @@
 
 ## soluzione problemi
  - [Causes of Heroku H10-App Crashed Error And How To Solve Them](https://dev.to/lawrence_eagles/causes-of-heroku-h10-app-crashed-error-and-how-to-solve-them-3jnl)
+
+## link utili
+ - [https://www.katesky.com/](https://www.katesky.com/)
+ - [https://www.javascripttutorial.net/](https://www.javascripttutorial.net/)
+ - [https://angular.schule/blog/2020-01-ngrx-data-views](https://angular.schule/blog/2020-01-ngrx-data-views)
