@@ -62,7 +62,8 @@ Molte risorse importanti si trovano su [NGRX store](https://ngrx.io/guide/store)
  - [CUSTOM COLUMNS](CUSTOM_COLUMNS.md), personalizzare la struttura tabella
  - [AUTH](AUTH.md), implementazione dell'autenticazione in ngrx
  - [DATA_COMPOSITION](DATA_COMPOSITION.md) 
- - [AUTH0](AUTH0.md) 
+ - [AUTH0](AUTH0.md)
+ - [ESLINT+PRETTIER](ESLINT+PRETTIER.md) 
 
 # [Risorse utili](RISORSE_UTILI.md)
 
