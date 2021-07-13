@@ -64,6 +64,7 @@ Molte risorse importanti si trovano su [NGRX store](https://ngrx.io/guide/store)
  - [DATA_COMPOSITION](DATA_COMPOSITION.md) 
  - [AUTH0](AUTH0.md)
  - [ESLINT+PRETTIER](ESLINT+PRETTIER.md) 
+ - [HUSKY+LINT-STAGED](HUSKY+LINT-STAGED.md) 
 
 # [Risorse utili](RISORSE_UTILI.md)
 
