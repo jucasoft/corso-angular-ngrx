@@ -40,7 +40,7 @@ npm set-script prepare "cd.. && husky install TUO_PATH/.husky"
  
 npm run prepare
  
-npx husky add TUO_PATH/.husky/pre-commit "cd TUO_PATH  npx ng lint --fix saccr-frontend-2"
+npx husky add TUO_PATH/.husky/pre-commit "cd TUO_PATH  eslint --fix"
  
 git add TUO_PATH/.husky/pre-commit
  
