@@ -40,7 +40,7 @@ npm set-script prepare "cd.. && husky install TUO_PATH/.husky"
  
 npm run prepare
  
-npx husky add TUO_PATH/.husky/pre-commit "cd TUO_PATH  eslint --fix"
+npx husky add TUO_PATH/.husky/pre-commit "cd TUO_PATH  lint-staged"
  
 git add TUO_PATH/.husky/pre-commit
  
