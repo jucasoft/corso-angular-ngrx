@@ -1,4 +1,4 @@
-# libreria per la gestione delle dipendenze, 
+# libreria per la gestione delle dipendenze,
 da valutare se necessaria. veramente interessante.
 https://ngrx-entity-relationship.sudo.eu/
 
@@ -37,6 +37,89 @@ appaiono una serie di scelte:
 ( ) TypeScript GraphQL document nodes (embedded GraphQL document)
 ( ) Introspection Fragment Matcher (for Apollo Client)
 ( ) Urql Introspection (for Urql Client)
+
+##descrizione plugin
+
+####(*) TypeScript (required by other typescript plugins)
+
+	https://www.graphql-code-generator.com/docs/plugins/typescript
+
+Questo plugin genera i tipi TypeScript di base, in base al tuo schema GraphQL.
+I tipi generati da questo plugin sono semplici e si riferiscono alla struttura esatta
+del tuo schema, ed è usato come tipi di base per altri plugin
+(come typescript-operations/ typescript-resolvers)
+
+####(*) TypeScript Operations (operations and fragments)
+
+	https://www.graphql-code-generator.com/docs/plugins/typescript-operations
+
+Questo plugin genera tipi TypeScript in base al tuo GraphQLSchema e alle tue operazioni e frammenti GraphQL.
+Genera tipi per i tuoi documenti GraphQL: Query, Mutation, Subscription e Fragment.
+
+Nota: nella maggior parte delle configurazioni, questo plugin richiede anche
+l'uso di `typescript, perché dipende dai suoi tipi di base.
+
+####(*) TypeScript Apollo Angular (typed GQL services) <========== installa in automatico una versione di apollo angular comptibile
+
+	https://www.graphql-code-generator.com/docs/plugins/typescript-apollo-angular
+
+Questo plugin genera servizi Apollo ( Query, Mutatione Subscription) con digitazioni TypeScript.
+
+Genererà un servizio Angular fortemente tipizzato per ogni query, mutazione o
+sottoscrizione definita. I servizi Angular generati sono pronti per essere
+iniettati e utilizzati all'interno del tuo componente Angular.
+
+Estende i plugin TypeScript di base: @graphql-codegen/typescript,
+@graphql-codegen/typescript-operations-
+e quindi condivide una configurazione simile.
+
+####( ) TypeScript GraphQL files modules (declarations for .graphql files)
+
+	https://www.graphql-code-generator.com/docs/generated-config/typescript-graphql-files-modules
+
+Questo plugin genera digitazioni TypeScript per file .graphql contenenti documenti GraphQL,
+che in seguito possono essere consumati utilizzando graphql-tag/loadero utilizzare i
+tipi string se utilizzerai le operazioni come stringhe non elaborate e otterrai il
+controllo del tipo e la sicurezza del tipo per le tue importazioni. Ciò significa
+che ogni volta che importi oggetti da file .graphql, il tuo IDE fornirà il completamento
+automatico.
+
+Questo plugin gestisce anche file .graphql contenenti più documenti GraphQL e nomina le
+importazioni in base al nome dell'operazione.
+
+####( ) TypeScript GraphQL document nodes (embedded GraphQL document)
+
+	https://www.graphql-code-generator.com/docs/plugins/typescript-document-nodes
+
+Questo plugin genera il file .ts sorgente TypeScript ( ) dai file GraphQL ( .graphql).
+
+####( ) Introspection Fragment Matcher (for Apollo Client)
+
+	https://www.graphql-code-generator.com/docs/plugins/fragment-matcher
+
+Questo plugin genera un file di introspezione ma solo con interfacce e unioni, in base al tuo GraphQLSchema.
+
+Se stai utilizzando apollo-cliente il tuo schema contiene interfaceo una uniondichiarazione, si consiglia di
+utilizzare Fragment Matcher di Apollo e il risultato generato dal plugin.
+
+Puoi leggere di più a riguardo nella apollo-clientdocumentazione:
+https://www.apollographql.com/docs/react/data/fragments/#fragments-on-unions-and-interfaces .
+
+Il plug-in Fragment Matcher accetta un file TypeScript/JavaScript o JSON come output ( .ts, .tsx, .js, .jsx, .json) .
+
+Sia in TypeScript che in JavaScript viene utilizzata un'esportazione predefinita.
+
+####( ) Urql Introspection (for Urql Client)
+
+	https://www.graphql-code-generator.com/docs/plugins/urql-introspection
+
+Questo plugin genera un file di introspezione per la funzione Schema Awareness di Urql Cache Exchange
+
+Puoi leggere di più a riguardo nella urqldocumentazione: https://formidable.com/open-source/urql/docs/graphcache/schema-awareness/ .
+
+Il plug-in Urql Introspection accetta un file TypeScript/JavaScript o JSON come output ( .ts, .tsx, .js, .jsx, .json) .
+
+Sia in TypeScript che in JavaScript viene utilizzata un'esportazione predefinita.
 
 
 nei test eseguiti sul mio pc, il processo di inizializzazione aveva aggiunto in automatico le librerie dei plugin
