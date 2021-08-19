@@ -122,9 +122,6 @@ Il plug-in Urql Introspection accetta un file TypeScript/JavaScript o JSON come 
 Sia in TypeScript che in JavaScript viene utilizzata un'esportazione predefinita.
 
 
-
-
-
 nei test eseguiti sul mio pc, il processo di inizializzazione aveva aggiunto in automatico le librerie dei plugin
 e bisognava solo lanciare npm i, mentre su altre postazioni bisogna installare le librerie singolarmente
 installarli a mano:
