@@ -8,7 +8,7 @@ npm -v
 ng new projectName --routing --style=scss
 cd projectName
 npm i @ngrx/store @ngrx/entity @ngrx/effects @ngrx/store-devtools @ngrx/router-store
-npm i primeng primeicons
+npm i primeng primeicons primeflex
 npm i ngrx-entity-crud@latest
 
 ```
