@@ -5,10 +5,10 @@ npm -v
 ```
 
 ```
-ng new projectName --routing --skip-install --style=scss
+ng new projectName --routing --style=scss
 cd projectName
 npm i @ngrx/store @ngrx/entity @ngrx/effects @ngrx/store-devtools @ngrx/router-store
-npm install primeng primeicons
+npm i primeng primeicons
 npm i ngrx-entity-crud@latest
 
 ```
