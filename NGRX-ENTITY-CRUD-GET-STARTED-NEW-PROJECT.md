@@ -1,7 +1,11 @@
 `ng new projectName`
+
 `npm i @ngrx/store @ngrx/entity @ngrx/effects @ngrx/store-devtools @ngrx/router-store`
+
 `npm install primeng primeicons`
+
 `npm i ngrx-entity-crud@latest`
+
 
 angular.json:
 ```
