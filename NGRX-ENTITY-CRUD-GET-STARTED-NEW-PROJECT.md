@@ -1,9 +1,7 @@
 `ng new projectName`
-
 `npm i @ngrx/store @ngrx/entity @ngrx/effects @ngrx/store-devtools @ngrx/router-store`
-
 `npm install primeng primeicons`
-
+`npm i ngrx-entity-crud@latest`
 
 angular.json:
 ```
@@ -15,12 +13,7 @@ angular.json:
 ],
 ```
 
-`npm i ngrx-entity-crud@latest`
-
 `ng generate ngrx-entity-crud:ng-add`
-
-[-] le sezioni non possono essere aggiunte, mancano i componenti presenti sotto core.
-
 `ng generate ngrx-entity-crud:store --name=crud-plural --clazz=CrudPlural --type=CRUD-PLURAL`
 
 tsconfig.json:
