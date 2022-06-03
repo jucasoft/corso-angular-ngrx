@@ -1,10 +1,16 @@
-ng new ng13
-npm i @angular/cdk
-npm i @ngrx/store @ngrx/entity @ngrx/effects @ngrx/store-devtools @ngrx/router-store
-npm i primeng primeicons
-npm i @angular/cdk @ngrx/store @ngrx/entity @ngrx/effects @ngrx/store-devtools @ngrx/router-store primeng primeicons ngrx-entity-crud@beta
-npm i ngrx-entity-crud@beta
+```
 
+ng new ng13b --routing true --style scss
+cd ng13b
+npm i @angular/cdk 
+npm i @ngrx/store 
+npm i @ngrx/entity 
+npm i @ngrx/effects 
+npm i @ngrx/store-devtools 
+npm i @ngrx/router-store 
+npm i primeng 
+npm i primeicons 
+ng add ngrx-entity-crud
 
 angular.json:
 "styles": [
@@ -14,7 +20,6 @@ angular.json:
 "src/styles.scss"
 ],
 
-ng generate ngrx-entity-crud:ng-add
 
 ng generate ngrx-entity-crud:store --name=crud-plural --clazz=CrudPlural --type=CRUD-PLURAL
 
@@ -29,3 +34,5 @@ tsconfig.json:
 
 environment.ts:
 + webServiceUri:""
+
+```
