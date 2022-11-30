@@ -5,41 +5,15 @@ npm -v
 ```
 
 ```
-ng new projectName --routing --style=scss
-cd projectName
-npm i @ngrx/store @ngrx/entity @ngrx/effects @ngrx/store-devtools @ngrx/router-store
+ng new {{project-name}} --routing true --style scss
+cd {{project-name}}
+npm i @angular/cdk
+npm i @ngrx/store @ngrx/entity @ngrx/effects @ngrx/store-devtools @ngrx/router-store @ngrx/component
 npm i primeng primeicons primeflex
-npm i ngrx-entity-crud@latest
+ng add ngrx-entity-crud
 
 ```
 
-angular.json:
 ```
-"styles": [
-"node_modules/primeicons/primeicons.css",
-"node_modules/primeng/resources/themes/lara-light-blue/theme.css",
-"node_modules/primeng/resources/primeng.min.css",
-"src/styles.scss"
-],
+ng generate ngrx-entity-crud:store --name={{class-name}} --clazz={{ClassName}} --type=CRUD-PLURAL
 ```
-
-```
-ng generate ngrx-entity-crud:ng-add
-ng generate ngrx-entity-crud:store --name=crud-plural --clazz=CrudPlural --type=CRUD-PLURAL
-```
-
-tsconfig.json:
-```
-"strict": false,
-"noImplicitOverride": false,
-"noPropertyAccessFromIndexSignature": false,
-"noImplicitReturns": false,
-```
-
-add:
-
-	+ "allowSyntheticDefaultImports": true
-
-environment.ts:
-
-	+ webServiceUri:""
