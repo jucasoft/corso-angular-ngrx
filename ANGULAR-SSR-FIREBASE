@@ -2,11 +2,13 @@ Ciao, in questo post voglio condividere con voi come creare un'applicazione Angu
 
 Per seguire questo tutorial, avrete bisogno di:
 
-- Un account GitHub
-- Un account Firebase
-- Node.js e npm installati sul vostro computer
-- Il pacchetto firebase-tools installato globalmente
-- Il pacchetto @angular/cli installato globalmente
+- Account GitHub
+- Account Firebase
+- Node.js v18.18.2 e npm v10.2.4
+- Il pacchetto firebase-tools@13.1.0 installato globalmente
+	`npm i -g firebase-tools`
+- Il pacchetto @angular/cli@17.1.2 installato globalmente
+	`npm i -g @angular/cli`
 
 Ecco i passi da seguire:
 
@@ -26,7 +28,7 @@ cd ng17-ssr-firebase
 	git branch -M main
 	git push -u origin main
 
-6. Inizializza il progetto Firebase (da dentro la cartella del progetto Angular)
+6. Inizializza il progetto Firebase (da dentro la cartella del progetto Angular, necessario installare `npm i -g @angular/cli`)
 firebase init
 
 7. Rispondi alle domande che ti vengono poste:
