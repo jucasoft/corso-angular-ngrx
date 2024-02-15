@@ -1,3 +1,5 @@
+QUESTO FILE È STATO SOSTITUITO DA 1-ANGULAR-SSR-FIREBASE.MD
+
 Ciao, in questo post voglio condividere con voi come creare un'applicazione Angular con server-side rendering (SSR) e ospitarla su Firebase usando GitHub Actions. Questo è un modo semplice e veloce per avere un sito web performante e scalabile, sfruttando i vantaggi del SSR e del cloud.
 
 Per seguire questo tutorial, avrete bisogno di:
