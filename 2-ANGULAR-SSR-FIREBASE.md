@@ -2,7 +2,7 @@
 2. Apriamo https://firebase.google.com/.
 3. Clicchiamo in alto a destra su "Go to console".
 4. Clicchiamo sul progetto.
-5. Sotto al titolo del progetto, clicchiamo su "+ aggiungi progetto".
+5. Sotto al titolo del progetto, clicchiamo su "+ aggiungi app".
 6. Selezioniamo la tipologia "web".
 7. Nel campo "Nickname app", consiglio il medesimo nome del progetto più "-web", ad esempio NomeProgetto-web.
 8. Selezioniamo la checkbox "inoltre, configura FireBase Hosting per questa app".
