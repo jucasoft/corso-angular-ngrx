@@ -204,7 +204,7 @@ export default class LoginComponent {
 }
 ```
 
-Commit e push, attendere il tempo necessario per la pubblicazione. Aprire il sito, click su login, click su "Login with Google". ATTENZIONE!! IN CONSOLE DEVE APPARIRVI UN ERRORE.
+Commit e push, attendere il tempo necessario per la pubblicazione. Aprire il sito, click su login, click su "Login with Google". ATTENZIONE!! IN CONSOLE DI CHROME DEV TOOLS DEVE APPARIRVI UN ERRORE.
 
 Non abbiamo ancora configurato nulla in Firebase, dobbiamo aggiungere il sistema di autenticazione. Era necessario testare il sistema in caso di errore :).
 
